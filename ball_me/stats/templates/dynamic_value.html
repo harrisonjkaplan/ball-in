@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Value</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Function to update the dynamic value
+        function updateValue() {
+            // Generate a random value
+            var value = Math.floor(Math.random() * 100) + 1;
+
+            // Update the value on the page
+            $('#stats').text(value);
+        }
+
+        // Call the updateValue function every 1 second
+        setInterval(updateValue, 1000);
+    </script>
+</head>
+<body>
+    <h1>Dynamic Value:</h1>
+    <p id="stats"></p>
+</body>
+</html>
